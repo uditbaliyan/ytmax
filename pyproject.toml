@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytmax"
+version = "0.1.0"
+description = "Download one YouTube video at the best quality that actually works"
+requires-python = ">=3.9"
+dependencies = ["yt-dlp>=2024.8.6"]
+
+[project.scripts]
+ytmax = "ytmax.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
